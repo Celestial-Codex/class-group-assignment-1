@@ -12,3 +12,43 @@
  * end is a positive number. Write a C program to accomplish this.
  *
  */
+ #include "stdio.h"
+#include "stdlib.h"
+#include "time.h"
+
+int main(void) {
+  srand(time(NULL));
+  int no_of_rounds, lucky_number, remainder;
+  int total_score = 0;
+  int secret_number = rand() % 1000;
+  printf("Welcome to even - odds your new addiction 😄\n");
+  printf("How many rounds are you up for: ");
+  scanf("%d", &no_of_rounds);
+
+  for (int i = 0; i < no_of_rounds; i++) {
+    printf("\n-----------------------------------\n\n");
+    printf("Round: %d\n", i + 1);
+    printf("Enter your lucky number: ");
+    scanf("%d", &lucky_number);
+    remainder = lucky_number % secret_number;
+    if (remainder == 0) {
+      total_score += 1;
+    } else if (remainder % 2 == 0) {
+      total_score += 3;
+    } else {
+      total_score -= 3;
+    }
+    printf("Current Score: %d\n", total_score);
+  }
+  printf("\n--------------------------------------------------\n");
+  if (total_score > 0) {
+
+    printf("You win 🥳\n");
+  } else {
+    printf("You loose 😢\n");
+  }
+  printf("The secret number was: %d\n", secret_number);
+  printf("--------------------------------------------------\n");
+
+  return 0;
+}
