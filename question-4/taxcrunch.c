@@ -1,3 +1,33 @@
+/* QUESTION:
+ * Study the following table used to compute the tax payable by employees in
+ * certain organization
+ *
+ * ---------------------------------------------------------------------------
+ * |Gross Pay           | Fewer than Three dependants|Three or more dependants|
+ * ---------------------------------------------------------------------------
+ * |Ksh 10,000 or less  | Tax rate = 0               | Tax rate = 0           |
+ * ---------------------------------------------------------------------------
+ * |More than Ksh 10,000|                            |                        |
+ * |and less than or    | Tax rate = 15%             | Tax rate = 10%         |
+ * |equal to Ksh20,000  |                            |                        |
+ * ---------------------------------------------------------------------------
+ * |Over Ksh.20,000     | Tax rate = 35%             | Tax rate = 25%         |
+ * ---------------------------------------------------------------------------
+ *
+ * A program is required to input the gross pay and number of dependants of an
+ * employee and then computes for the tax payable and net pay. The program
+ * should output gross pay, tax payable and the net pay of an employee in a
+ * suitable format.
+ * Hint:
+ *    Tax payable = Gross pay * Tax rate
+ *    Net pay = Gross pay - Tax payable
+ * Required
+ *
+ *    i) Draw the flowchart of your solution
+ *   ii) Write the corresponding program
+ *
+ */
+
 #include "stdio.h"
 #include "stdlib.h"
 
