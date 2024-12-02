@@ -12,7 +12,8 @@
  * end is a positive number. Write a C program to accomplish this.
  *
  */
- #include "stdio.h"
+
+#include "stdio.h"
 #include "stdlib.h"
 #include "time.h"
 
