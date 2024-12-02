@@ -62,16 +62,16 @@ int main(void) {
     } else {
       strcpy(grade, "Fail");
     }
-    printf("\n------------------------------------------------\n\n");
-    printf("Student Admission: %s\n", admission_number);
+    printf("\n-----------------------------------------------\n\n");
+    printf("Student Admission:%s\n", admission_number);
     printf("Surname: %s\n", surname);
     printf("Maths: %d\n", maths);
     printf("English: %d\n", english);
     printf("Science: %d\n", science);
     printf("\n------------------------------------------------\n\n");
     printf("Average: %.2lf\n", average);
-    printf("Grade: %s\n", grade);
-    printf("\n------------------------------------------------\n\n");
+    printf("Grade: %s\n",grade);
+    printf("\n----------------------------------------------\n\n");
 
     printf("Would you like to evaluate more students (Y/N): ");
     scanf("%s", &continue_evaluating_students);
